@@ -25,6 +25,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="uER-K7-AjG"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="CSa-DQ-Pzn"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -41,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="895.6521739130435" y="792.39130434782612"/>
         </scene>
-        <!--View Controller-->
+        <!--Add View Controller-->
         <scene sceneID="PWZ-bk-ABY">
             <objects>
-                <viewController id="EVO-Gx-nnm" sceneMemberID="viewController">
+                <viewController id="EVO-Gx-nnm" customClass="addViewController" customModule="groceryList" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iJP-Ix-sMT"/>
                         <viewControllerLayoutGuide type="bottom" id="ioe-mI-8b5"/>

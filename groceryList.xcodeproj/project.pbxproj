@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		213E41561F700D61006B4358 /* addViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213E41551F700D61006B4358 /* addViewController.swift */; };
 		21BC9C541F6C1BAE0094CC54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC9C531F6C1BAE0094CC54 /* AppDelegate.swift */; };
 		21BC9C561F6C1BAE0094CC54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC9C551F6C1BAE0094CC54 /* ViewController.swift */; };
 		21BC9C591F6C1BAE0094CC54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BC9C571F6C1BAE0094CC54 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		213E41551F700D61006B4358 /* addViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addViewController.swift; sourceTree = "<group>"; };
 		21BC9C501F6C1BAD0094CC54 /* groceryList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = groceryList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21BC9C531F6C1BAE0094CC54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21BC9C551F6C1BAE0094CC54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				21BC9C531F6C1BAE0094CC54 /* AppDelegate.swift */,
 				21BC9C551F6C1BAE0094CC54 /* ViewController.swift */,
+				213E41551F700D61006B4358 /* addViewController.swift */,
 				21BC9C571F6C1BAE0094CC54 /* Main.storyboard */,
 				21BC9C5D1F6C1BAE0094CC54 /* Assets.xcassets */,
 				21BC9C5F1F6C1BAE0094CC54 /* LaunchScreen.storyboard */,
@@ -265,6 +268,7 @@
 			files = (
 				21BC9C561F6C1BAE0094CC54 /* ViewController.swift in Sources */,
 				21BC9C541F6C1BAE0094CC54 /* AppDelegate.swift in Sources */,
+				213E41561F700D61006B4358 /* addViewController.swift in Sources */,
 				21BC9C5C1F6C1BAE0094CC54 /* groceryList.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +518,7 @@
 				21BC9C7D1F6C1BAE0094CC54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21BC9C7E1F6C1BAE0094CC54 /* Build configuration list for PBXNativeTarget "groceryListTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +527,7 @@
 				21BC9C801F6C1BAE0094CC54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21BC9C811F6C1BAE0094CC54 /* Build configuration list for PBXNativeTarget "groceryListUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +536,7 @@
 				21BC9C831F6C1BAE0094CC54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
