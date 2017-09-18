@@ -5,7 +5,7 @@
 //  Created by apcs2 on 9/15/17.
 //  Copyright © 2017 apcs2. All rights reserved.
 //
-//
+
 import UIKit
 
 import CoreData
@@ -25,6 +25,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         {
         }
     }
+    //
+    
     func fetchFunction(_ request: NSFetchRequest<NSFetchRequestResult>) throws -> [Any]
     {
         var array2 : [Any]! = []
