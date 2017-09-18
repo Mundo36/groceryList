@@ -25,6 +25,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         {
         }
     }
+    //
+    
     func fetchFunction(_ request: NSFetchRequest<NSFetchRequestResult>) throws -> [Any]
     {
         var array2 : [Any]! = []
