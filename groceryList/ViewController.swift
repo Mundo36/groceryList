@@ -5,9 +5,10 @@
 //  Created by apcs2 on 9/15/17.
 //  Copyright © 2017 apcs2. All rights reserved.
 //
-
+//This was done by rishi
 import UIKit
 
+<<<<<<< HEAD
 import CoreData
 var array: [NSManagedObject] = []
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
@@ -72,6 +73,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         {
             print("STRING")
         }
+=======
+class ViewController: UIViewController
+{
+    var test = 1
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+>>>>>>> fa47e9aa4dd9fd461e653429e28cc73f0bcd0dd4
     }
 }
 
