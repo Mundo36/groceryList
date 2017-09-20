@@ -52,7 +52,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     {
         return array.count
     }
-    func save(text: String, decimal: Float)
+    func save(text: String, amount: Double, quantity: Int)
     {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate
             else
@@ -63,6 +63,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let entity = NSEntityDescription.entity(forEntityName: "Entity", in: manageContext)!
         let newObject = NSManagedObject(entity: entity, insertInto: manageContext)
         newObject.setValue(text, forKey: "text")
+        newObject.setValue(amount, forKey: "amount")
+        newObject.setValue(quantity, forKey: "quantity")
 
         do
         {
