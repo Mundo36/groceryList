@@ -7,10 +7,9 @@
 //
 //This was done by rishi
 import UIKit
-
-<<<<<<< HEAD
 import CoreData
-var array: [NSManagedObject] = []
+var array2 = [String]()
+var array = [NSManagedObject]()
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
     @IBOutlet weak var tableList: UITableView!
@@ -46,7 +45,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = array[indexPath.row].value(forKeyPath: "text") as? String
+        cell.textLabel?.text = array2[indexPath.row]
         return cell
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -64,7 +63,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let entity = NSEntityDescription.entity(forEntityName: "Entity", in: manageContext)!
         let newObject = NSManagedObject(entity: entity, insertInto: manageContext)
         newObject.setValue(text, forKey: "text")
-        newObject.setValue(decimal, forKey: "decimal")
+
         do
         {
             try manageContext.save()
@@ -73,14 +72,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         {
             print("STRING")
         }
-=======
-class ViewController: UIViewController
-{
-    var test = 1
-    override func viewDidLoad()
-    {
-        super.viewDidLoad()
->>>>>>> fa47e9aa4dd9fd461e653429e28cc73f0bcd0dd4
-    }
+
 }
 
+}

@@ -10,10 +10,38 @@ import UIKit
 
 class addViewController: UIViewController
 {
+    @IBOutlet weak var textField: UITextField!
 
     override func viewDidLoad()
     {
         super.viewDidLoad()
 
+    }
+    @IBAction func addBttn(_ sender: Any)
+    {
+        array2.append(textField.text!)
+        
+        func save(text: String, amount)
+        {
+            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate
+                else
+            {
+                return
+            }
+            let manageContext = appDelegate.persistentContainer.viewContext
+            let entity = NSEntityDescription.entity(forEntityName: "Entity", in: manageContext)!
+            let newObject = NSManagedObject(entity: entity, insertInto: manageContext)
+            newObject.setValue(text, forKey: "text")
+            
+            do
+            {
+                try manageContext.save()
+            }
+            catch
+            {
+                print("STRING")
+            }
+            
+        }
     }
 }
