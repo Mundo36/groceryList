@@ -12,7 +12,9 @@ import CoreData
 class addViewController: UIViewController
 {
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var quantityTxt: UITextField!
 
+    @IBOutlet weak var amountTxt: UITextField!
     override func viewDidLoad()
     {
         super.viewDidLoad()
