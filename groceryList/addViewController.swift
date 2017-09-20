@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class addViewController: UIViewController
 {
@@ -17,33 +18,36 @@ class addViewController: UIViewController
         super.viewDidLoad()
 
     }
-    @IBAction func addBttn(_ sender: Any)
+   
+    func save(text: String, amount: Double, quantity: Int )
     {
-        array2.append(textField.text!)
-        
-        func save(text: String, amount: Double, quantity: Int )
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate
+            else
         {
-            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate
-                else
-            {
-                return
-            }
-            let manageContext = appDelegate.persistentContainer.viewContext
-            let entity = NSEntityDescription.entity(forEntityName: "Entity", in: manageContext)!
-            let newObject = NSManagedObject(entity: entity, insertInto: manageContext)
-            newObject.setValue(text, forKey: "text")
-            newObject.setValue(amount, forKey: "amount")
-            newObject.setValue(quantity, forkey: "quantity")
-            
-            do
-            {
-                try manageContext.save()
-            }
-            catch
-            {
-                print("STRING")
-            }
-            
+            return
         }
+        let manageContext = appDelegate.persistentContainer.viewContext
+        
+        let entity = NSEntityDescription.entity(forEntityName: "Entity", in: manageContext)!
+        let newObject = NSManagedObject(entity: entity, insertInto: manageContext)
+        newObject.setValue(text, forKey: "text")
+        newObject.setValue(amount, forKey: "amount")
+        // newObject.setValue(quantity, forkey: "quantity")
+        
+        do
+        {
+            try manageContext.save()
+        }
+        catch
+        {
+            print("STRING")
+        }
+        
     }
+    @IBAction func addBttn(_ sender: UIButton)
+    {
+       save(text: textField.text!, amount: <#T##Double#>, quantity: <#T##Int#>)
+        
+    }
+
 }

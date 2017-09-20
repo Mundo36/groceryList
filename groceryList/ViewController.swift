@@ -8,10 +8,13 @@
 //This was done by rishi
 import UIKit
 import CoreData
-var array2 = [String]()
-var array = [NSManagedObject]()
+var arrayTwo = [String]()
+
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
+    
+    var array = [NSManagedObject]()
+    
     @IBOutlet weak var tableList: UITableView!
     override func viewDidLoad()
     {
@@ -44,8 +47,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
+<<<<<<< HEAD
         let cell = tableList.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = array2[indexPath.row]
+=======
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = array[indexPath.row].value(forKeyPath: "text") as? String
+>>>>>>> 03d5bcb7faa8a207d6f76b0de613bb010126ad12
         return cell
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
