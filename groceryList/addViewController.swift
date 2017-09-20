@@ -21,7 +21,7 @@ class addViewController: UIViewController
     {
         array2.append(textField.text!)
         
-        func save(text: String, amount)
+        func save(text: String, amount: Double, quantity: Int )
         {
             guard let appDelegate = UIApplication.shared.delegate as? AppDelegate
                 else
@@ -32,6 +32,8 @@ class addViewController: UIViewController
             let entity = NSEntityDescription.entity(forEntityName: "Entity", in: manageContext)!
             let newObject = NSManagedObject(entity: entity, insertInto: manageContext)
             newObject.setValue(text, forKey: "text")
+            newObject.setValue(amount, forKey: "amount")
+            newObject.setValue(quantity, forkey: "quantity")
             
             do
             {
