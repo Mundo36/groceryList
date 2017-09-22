@@ -10,11 +10,11 @@ import Foundation
 
 class groceryCatagory
 {
-    var protein = []
-    var fish = []
-    var fruit = []
-    var veggies = []
-    var drinks = []
-    var grains = []
-    var dairy = []
+    var protein = [String]
+    var fish = [String]
+    var fruit = [String]
+    var veggies = [String]
+    var drinks = [String]
+    var grains = [String]
+    var dairy = [String]
 }
