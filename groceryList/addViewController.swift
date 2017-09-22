@@ -21,7 +21,7 @@ class addViewController: UIViewController
 
     }
    
-    func save(text: String, amount: Double, quantity: Int )
+    func save(text: String, amount: Double)
     {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate
             else
@@ -34,7 +34,7 @@ class addViewController: UIViewController
         let newObject = NSManagedObject(entity: entity, insertInto: manageContext)
         newObject.setValue(text, forKey: "text")
         newObject.setValue(amount, forKey: "amount")
-        // newObject.setValue(quantity, forkey: "quantity")
+        //newObject.setValue(quantity, forkey: "quantity")
         
         do
         {
@@ -48,7 +48,8 @@ class addViewController: UIViewController
     }
     @IBAction func addBttn(_ sender: UIButton)
     {
-       save(text: textField.text!, amount: <#T##Double#>, quantity: <#T##Int#>)
+      save(text: textField.text!, amount: Double(amountTxt.text!)!)
+        
         
     }
 

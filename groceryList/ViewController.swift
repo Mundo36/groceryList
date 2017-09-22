@@ -50,6 +50,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
         let cell = tableList.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = array[indexPath.row].value(forKeyPath: "text") as? String
+        cell.detailTextLabel?.text = array[indexPath.row].value(forKeyPath: "amount") as? String
 
 
         return cell
@@ -58,7 +59,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     {
         return array.count
     }
-    func save(text: String, amount: Double, quantity: Int)
+    func save(text: String, amount: Double, quantity: Double)
     {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate
             else
