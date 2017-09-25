@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		213E41561F700D61006B4358 /* addViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213E41551F700D61006B4358 /* addViewController.swift */; };
+		218B431C1F79493E00DC7FD6 /* mainStoryboard2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 218B431B1F79493E00DC7FD6 /* mainStoryboard2.storyboard */; };
 		21BC9C541F6C1BAE0094CC54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC9C531F6C1BAE0094CC54 /* AppDelegate.swift */; };
 		21BC9C561F6C1BAE0094CC54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC9C551F6C1BAE0094CC54 /* ViewController.swift */; };
 		21BC9C5C1F6C1BAE0094CC54 /* groceryList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 21BC9C5A1F6C1BAE0094CC54 /* groceryList.xcdatamodeld */; };
@@ -16,7 +17,6 @@
 		21BC9C6C1F6C1BAE0094CC54 /* groceryListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC9C6B1F6C1BAE0094CC54 /* groceryListTests.swift */; };
 		21BC9C771F6C1BAE0094CC54 /* groceryListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC9C761F6C1BAE0094CC54 /* groceryListUITests.swift */; };
 		21CB040B1F7552FC00EC9344 /* Catagories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CB040A1F7552FC00EC9344 /* Catagories.swift */; };
-		21E9E5A71F75599800C428EF /* mainStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21E9E5A61F75599800C428EF /* mainStoryBoard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		213E41551F700D61006B4358 /* addViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addViewController.swift; sourceTree = "<group>"; };
+		218B431B1F79493E00DC7FD6 /* mainStoryboard2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = mainStoryboard2.storyboard; sourceTree = "<group>"; };
 		21BC9C501F6C1BAD0094CC54 /* groceryList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = groceryList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21BC9C531F6C1BAE0094CC54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21BC9C551F6C1BAE0094CC54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +53,6 @@
 		21BC9C761F6C1BAE0094CC54 /* groceryListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groceryListUITests.swift; sourceTree = "<group>"; };
 		21BC9C781F6C1BAE0094CC54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21CB040A1F7552FC00EC9344 /* Catagories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Catagories.swift; sourceTree = "<group>"; };
-		21E9E5A61F75599800C428EF /* mainStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = mainStoryBoard.storyboard; path = ../mainStoryBoard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +83,7 @@
 		21BC9C471F6C1BAD0094CC54 = {
 			isa = PBXGroup;
 			children = (
+				218B431B1F79493E00DC7FD6 /* mainStoryboard2.storyboard */,
 				21BC9C521F6C1BAD0094CC54 /* groceryList */,
 				21BC9C6A1F6C1BAE0094CC54 /* groceryListTests */,
 				21BC9C751F6C1BAE0094CC54 /* groceryListUITests */,
@@ -107,7 +108,6 @@
 				21BC9C551F6C1BAE0094CC54 /* ViewController.swift */,
 				213E41551F700D61006B4358 /* addViewController.swift */,
 				21CB040A1F7552FC00EC9344 /* Catagories.swift */,
-				21E9E5A61F75599800C428EF /* mainStoryBoard.storyboard */,
 				21BC9C5D1F6C1BAE0094CC54 /* Assets.xcassets */,
 				21BC9C5F1F6C1BAE0094CC54 /* LaunchScreen.storyboard */,
 				21BC9C621F6C1BAE0094CC54 /* Info.plist */,
@@ -244,7 +244,7 @@
 			files = (
 				21BC9C611F6C1BAE0094CC54 /* LaunchScreen.storyboard in Resources */,
 				21BC9C5E1F6C1BAE0094CC54 /* Assets.xcassets in Resources */,
-				21E9E5A71F75599800C428EF /* mainStoryBoard.storyboard in Resources */,
+				218B431C1F79493E00DC7FD6 /* mainStoryboard2.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
