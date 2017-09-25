@@ -72,6 +72,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         newObject.setValue(text, forKey: "text")
         newObject.setValue(amount, forKey: "amount")
         newObject.setValue(quantity, forKey: "quantity")
+    
 
         do
         {
