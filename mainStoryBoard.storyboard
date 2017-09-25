@@ -94,7 +94,11 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Quantity" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HvA-n8-qBt">
+<<<<<<< HEAD
                                 <rect key="frame" x="148" y="376" width="78" height="30"/>
+=======
+                                <rect key="frame" x="133" y="182" width="108" height="30"/>
+>>>>>>> 0f1f07e8df19e35cc71618c5fdfa5baedde68023
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -109,7 +113,18 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xJ7-Qd-GiO">
+<<<<<<< HEAD
                                 <rect key="frame" x="148" y="318" width="78" height="30"/>
+=======
+                                <rect key="frame" x="114" y="126" width="146" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Isle Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xSe-Wj-GWb">
+                                <rect key="frame" x="133" y="237" width="108" height="30"/>
+>>>>>>> 0f1f07e8df19e35cc71618c5fdfa5baedde68023
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -127,6 +142,7 @@
                     </view>
                     <connections>
                         <outlet property="amountTxt" destination="xJ7-Qd-GiO" id="VAs-Qf-O7l"/>
+                        <outlet property="isleTxt" destination="xSe-Wj-GWb" id="haT-FP-lDd"/>
                         <outlet property="quantityTxt" destination="HvA-n8-qBt" id="SnZ-9c-lNe"/>
                         <outlet property="textField" destination="sEy-lo-tYi" id="gUW-vH-bai"/>
                     </connections>
