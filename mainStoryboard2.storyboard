@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Catagory View Controller-->
         <scene sceneID="ARQ-pN-4Yl">
             <objects>
-                <viewController id="Ura-hb-cdh" sceneMemberID="viewController">
+                <viewController id="Ura-hb-cdh" customClass="CatagoryViewController" customModule="groceryList" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gc8-2I-oKN"/>
                         <viewControllerLayoutGuide type="bottom" id="Flx-Av-YIJ"/>
@@ -20,9 +20,34 @@
                     <view key="view" contentMode="scaleToFill" id="sFv-fg-7Cz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UCW-1r-0OP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="McQ-iq-var">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="McQ-iq-var" id="Qvc-LS-DGO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ra2-rY-8Am" kind="show" id="EwE-2s-n3d"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UCW-1r-0OP" firstAttribute="top" secondItem="sFv-fg-7Cz" secondAttribute="top" id="M8M-d3-t3Q"/>
+                            <constraint firstItem="UCW-1r-0OP" firstAttribute="leading" secondItem="sFv-fg-7Cz" secondAttribute="leading" id="OT7-Yc-ToA"/>
+                            <constraint firstAttribute="trailing" secondItem="UCW-1r-0OP" secondAttribute="trailing" id="Rxx-a3-jky"/>
+                            <constraint firstItem="Flx-Av-YIJ" firstAttribute="top" secondItem="UCW-1r-0OP" secondAttribute="bottom" id="TKl-XX-zFE"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="3GJ-ZZ-uKW"/>
+                    <navigationItem key="navigationItem" id="ht8-pn-8gY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lex-nT-rRN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -31,6 +56,7 @@
         <!--View Controller-->
         <scene sceneID="9Xi-Bu-JZR">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U7g-iX-XIV" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="ra2-rY-8Am" customClass="ViewController" customModule="groceryList" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rd9-RP-EO2"/>
@@ -59,16 +85,30 @@
                                     <outlet property="delegate" destination="ra2-rY-8Am" id="NjW-g3-zQ5"/>
                                 </connections>
                             </tableView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hpu-sb-cLV">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="zFt-Sj-E78"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem systemItem="add" id="XTS-Q7-YZW">
+                            <connections>
+                                <segue destination="7E7-UC-Wgu" kind="show" id="X8V-YG-51w"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableList" destination="gK0-56-Bag" id="mWq-75-TVH"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="U7g-iX-XIV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="880.79999999999995" y="-125.4872563718141"/>
+            <point key="canvasLocation" x="1020" y="-125"/>
         </scene>
         <!--Add View Controller-->
         <scene sceneID="Q6Y-dA-Ewy">
@@ -130,7 +170,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HDX-BM-1hY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1567.2" y="-125.4872563718141"/>
+            <point key="canvasLocation" x="1858" y="-125"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XsJ-dG-AKq">
