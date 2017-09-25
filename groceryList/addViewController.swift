@@ -12,6 +12,7 @@ import CoreData
 class addViewController: UIViewController
 {
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var isleTxt: UITextField!
     @IBOutlet weak var quantityTxt: UITextField!
     @IBOutlet weak var amountTxt: UITextField!
     override func viewDidLoad()
@@ -33,6 +34,8 @@ class addViewController: UIViewController
         let newObject = NSManagedObject(entity: entity, insertInto: manageContext)
         newObject.setValue(text, forKey: "text")
         newObject.setValue(amount, forKey: "amount")
+        newObject.setValue(isle, forKey: "isle")
+        
         //newObject.setValue(quantity, forkey: "quantity")
         
         do
