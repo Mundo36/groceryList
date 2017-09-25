@@ -34,7 +34,7 @@ class addViewController: UIViewController
         let newObject = NSManagedObject(entity: entity, insertInto: manageContext)
         newObject.setValue(text, forKey: "text")
         newObject.setValue(amount, forKey: "amount")
-        newObject.setValue(isle, forKey: "isle")
+//        newObject.setValue(isle, forKey: "isle")
         
         //newObject.setValue(quantity, forkey: "quantity")
         
