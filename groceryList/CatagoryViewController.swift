@@ -10,13 +10,13 @@ import UIKit
 
 class CatagoryViewController: UIViewController
 {
-<<<<<<< HEAD
+
     var groceries = [groceryCatagory]()
     
-=======
+
     @IBOutlet weak var listView: UITableView!
 
->>>>>>> 9353b0059e5495c159127dfe51272f91570f3ee0
+
     override func viewDidLoad()
     {
         super.viewDidLoad()
