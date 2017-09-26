@@ -102,7 +102,11 @@
                         </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="Pt4-mY-8aQ">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="q4X-6h-9Ca"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="q4X-6h-9Ca">
+                            <connections>
+                                <segue destination="7E7-UC-Wgu" kind="show" id="AtU-IO-Qel"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -194,4 +198,7 @@
             <point key="canvasLocation" x="1959.2" y="-125.4872563718141"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="X8V-YG-51w"/>
+    </inferredMetricsTieBreakers>
 </document>
