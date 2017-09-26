@@ -10,6 +10,7 @@ import UIKit
 
 class CatagoryViewController: UIViewController
 {
+    @IBOutlet weak var listView: UITableView!
 
     override func viewDidLoad()
     {
