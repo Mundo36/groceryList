@@ -50,7 +50,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
         let cell = tableList.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = array[indexPath.row].value(forKeyPath: "text") as? String
-        cell.detailTextLabel?.text = array[indexPath.row].value(forKeyPath: "isle") as? String
+        cell.detailTextLabel?.text = array[indexPath.row].value(forKeyPath: "amount") as? String
 
 
         return cell
@@ -72,7 +72,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         newObject.setValue(text, forKey: "text")
         newObject.setValue(amount, forKey: "amount")
         newObject.setValue(quantity, forKey: "quantity")
-    
+        
 
         do
         {
