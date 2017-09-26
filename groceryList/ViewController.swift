@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 var arrayTwo = [String]()
+var manageObjectContext: NSManagedObjectContext!
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
@@ -27,6 +28,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         catch
         {
         }
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        tableList.reloadData()
     }
     //
     
@@ -51,6 +55,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = tableList.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = array[indexPath.row].value(forKeyPath: "text") as? String
         cell.detailTextLabel?.text = array[indexPath.row].value(forKeyPath: "amount") as? String
+        cell.accessoryType = .disclosureIndicator
 
 
         return cell
@@ -59,6 +64,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     {
         return array.count
     }
+//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath)
+//        
+//    {
+//        if editingStyle == .delete
+//            
+//        {
+//            manageObjectContext.delete(arrayTwo[indexPath.row])
+//            do {
+//                try manageObjectContext.save()
+//                tableView.reloadData()
+//            } catch let error as NSError
+//        {
+//                print("Could not save. \(error), \(error.userInfo)")
+//        }
+//    }
     func save(text: String, amount: Double, quantity: Double)
     {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate
@@ -71,7 +91,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let newObject = NSManagedObject(entity: entity, insertInto: manageContext)
         newObject.setValue(text, forKey: "text")
         newObject.setValue(amount, forKey: "amount")
-        newObject.setValue(quantity, forKey: "quantity")
+//        newObject.setValue(quantity, forKey: "quantity")
         
 
         do
@@ -82,6 +102,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         {
             print("STRING")
         }
+        tableList.reloadData()
 
 }
 
