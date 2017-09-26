@@ -10,11 +10,12 @@ import UIKit
 
 class CatagoryViewController: UIViewController
 {
-
+    var groceries = [groceryCatagory]()
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
+        var appSauce = Fruits(fruits: "Apple Sauce")
     }
     
     
