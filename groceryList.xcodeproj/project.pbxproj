@@ -25,7 +25,6 @@
 		21BC9C611F6C1BAE0094CC54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BC9C5F1F6C1BAE0094CC54 /* LaunchScreen.storyboard */; };
 		21BC9C6C1F6C1BAE0094CC54 /* groceryListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC9C6B1F6C1BAE0094CC54 /* groceryListTests.swift */; };
 		21BC9C771F6C1BAE0094CC54 /* groceryListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC9C761F6C1BAE0094CC54 /* groceryListUITests.swift */; };
-		21CB040B1F7552FC00EC9344 /* Catagories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CB040A1F7552FC00EC9344 /* Catagories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +69,6 @@
 		21BC9C721F6C1BAE0094CC54 /* groceryListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = groceryListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21BC9C761F6C1BAE0094CC54 /* groceryListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groceryListUITests.swift; sourceTree = "<group>"; };
 		21BC9C781F6C1BAE0094CC54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		21CB040A1F7552FC00EC9344 /* Catagories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Catagories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +138,6 @@
 				21BC9C531F6C1BAE0094CC54 /* AppDelegate.swift */,
 				21BC9C551F6C1BAE0094CC54 /* ViewController.swift */,
 				213E41551F700D61006B4358 /* addViewController.swift */,
-				21CB040A1F7552FC00EC9344 /* Catagories.swift */,
 				21A7911F1F794BCF007A93E7 /* CatagoryViewController.swift */,
 				218B431B1F79493E00DC7FD6 /* Main.storyboard */,
 				21BC9C5D1F6C1BAE0094CC54 /* Assets.xcassets */,
@@ -307,7 +304,6 @@
 				213D35251F7BEF200099D700 /* Fruits.swift in Sources */,
 				21BC9C561F6C1BAE0094CC54 /* ViewController.swift in Sources */,
 				213D35271F7BEF3A0099D700 /* Veggies.swift in Sources */,
-				21CB040B1F7552FC00EC9344 /* Catagories.swift in Sources */,
 				21BC9C541F6C1BAE0094CC54 /* AppDelegate.swift in Sources */,
 				213E41561F700D61006B4358 /* addViewController.swift in Sources */,
 				213D352E1F7BEF860099D700 /* Dairy.swift in Sources */,

@@ -51,6 +51,15 @@ class addViewController: UIViewController
     @IBAction func addBttn(_ sender: UIButton)
     {
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        var task = Entity(context: context)
+        task.text = textField.text!
+        task.amount = Double(amountTxt.text!)!
+        task.isle = String(textField.text!)
+        task.quantity = Double(textField.text!)!
+        
+        let _ = navigationController?.popViewController(animated: true)
+        
+        
         
         save(text: textField.text!, amount: Double(amountTxt.text!)!, isle: isleTxt.text!, quantity: Double(quantityTxt.text!)!)
         
@@ -59,7 +68,7 @@ class addViewController: UIViewController
             do {
                 let appDelegate = UIApplication.shared.delegate as? AppDelegate
                 let manageContext = appDelegate?.persistentContainer.viewContext
-                text = try manageContext.fetch(Entity.fetchRequest())
+                task = try manageContext?.fetch(Entity.fetchRequest())
             }
             catch
                 
