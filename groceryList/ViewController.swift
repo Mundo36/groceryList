@@ -32,7 +32,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     override func viewDidAppear(_ animated: Bool)
     {
-        tableList.reloadData()
+      
     }
     //
     
@@ -81,6 +81,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 //                print("Could not save. \(error), \(error.userInfo)")
 //        }
 //    }
+    
+    
     func save(text: String, amount: Double, quantity: Double)
     {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate

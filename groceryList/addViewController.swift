@@ -50,7 +50,24 @@ class addViewController: UIViewController
     }
     @IBAction func addBttn(_ sender: UIButton)
     {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
         save(text: textField.text!, amount: Double(amountTxt.text!)!, isle: isleTxt.text!, quantity: Double(quantityTxt.text!)!)
+        
+        func getData()
+        {
+            do {
+                let appDelegate = UIApplication.shared.delegate as? AppDelegate
+                let manageContext = appDelegate?.persistentContainer.viewContext
+                text = try manageContext.fetch(Entity.fetchRequest())
+            }
+            catch
+                
+            {
+                print("Fetching Failed")
+            }
+            
+        }
         
         
         
