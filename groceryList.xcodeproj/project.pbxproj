@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		213D35251F7BEF200099D700 /* Fruits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213D35241F7BEF200099D700 /* Fruits.swift */; };
+		213D35271F7BEF3A0099D700 /* Veggies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213D35261F7BEF3A0099D700 /* Veggies.swift */; };
+		213D35291F7BEF4C0099D700 /* Other.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213D35281F7BEF4C0099D700 /* Other.swift */; };
+		213D352C1F7BEF700099D700 /* Grains.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213D352B1F7BEF700099D700 /* Grains.swift */; };
+		213D352E1F7BEF860099D700 /* Dairy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213D352D1F7BEF860099D700 /* Dairy.swift */; };
+		213D35301F7BEF930099D700 /* Condiments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213D352F1F7BEF930099D700 /* Condiments.swift */; };
+		213D35321F7BEF9B0099D700 /* Drinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213D35311F7BEF9B0099D700 /* Drinks.swift */; };
+		213D35341F7BEFB60099D700 /* Sweets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213D35331F7BEFB60099D700 /* Sweets.swift */; };
 		213E41561F700D61006B4358 /* addViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213E41551F700D61006B4358 /* addViewController.swift */; };
 		218B431C1F79493E00DC7FD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 218B431B1F79493E00DC7FD6 /* Main.storyboard */; };
 		21A791201F794BCF007A93E7 /* CatagoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A7911F1F794BCF007A93E7 /* CatagoryViewController.swift */; };
@@ -38,6 +46,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		213D35241F7BEF200099D700 /* Fruits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fruits.swift; sourceTree = "<group>"; };
+		213D35261F7BEF3A0099D700 /* Veggies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Veggies.swift; sourceTree = "<group>"; };
+		213D35281F7BEF4C0099D700 /* Other.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Other.swift; sourceTree = "<group>"; };
+		213D352B1F7BEF700099D700 /* Grains.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grains.swift; sourceTree = "<group>"; };
+		213D352D1F7BEF860099D700 /* Dairy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dairy.swift; sourceTree = "<group>"; };
+		213D352F1F7BEF930099D700 /* Condiments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Condiments.swift; sourceTree = "<group>"; };
+		213D35311F7BEF9B0099D700 /* Drinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drinks.swift; sourceTree = "<group>"; };
+		213D35331F7BEFB60099D700 /* Sweets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sweets.swift; sourceTree = "<group>"; };
 		213E41551F700D61006B4358 /* addViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addViewController.swift; sourceTree = "<group>"; };
 		218B431B1F79493E00DC7FD6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
 		21A7911F1F794BCF007A93E7 /* CatagoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatagoryViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +98,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		213D352A1F7BEF530099D700 /* Catagories */ = {
+			isa = PBXGroup;
+			children = (
+				213D35241F7BEF200099D700 /* Fruits.swift */,
+				213D35261F7BEF3A0099D700 /* Veggies.swift */,
+				213D352B1F7BEF700099D700 /* Grains.swift */,
+				213D352D1F7BEF860099D700 /* Dairy.swift */,
+				213D352F1F7BEF930099D700 /* Condiments.swift */,
+				213D35311F7BEF9B0099D700 /* Drinks.swift */,
+				213D35331F7BEFB60099D700 /* Sweets.swift */,
+				213D35281F7BEF4C0099D700 /* Other.swift */,
+			);
+			name = Catagories;
+			sourceTree = "<group>";
+		};
 		21BC9C471F6C1BAD0094CC54 = {
 			isa = PBXGroup;
 			children = (
@@ -105,16 +136,13 @@
 		21BC9C521F6C1BAD0094CC54 /* groceryList */ = {
 			isa = PBXGroup;
 			children = (
+				213D352A1F7BEF530099D700 /* Catagories */,
 				21BC9C531F6C1BAE0094CC54 /* AppDelegate.swift */,
 				21BC9C551F6C1BAE0094CC54 /* ViewController.swift */,
 				213E41551F700D61006B4358 /* addViewController.swift */,
 				21CB040A1F7552FC00EC9344 /* Catagories.swift */,
-
-
-				218B431B1F79493E00DC7FD6 /* Main.storyboard */,
-
 				21A7911F1F794BCF007A93E7 /* CatagoryViewController.swift */,
-				218B431B1F79493E00DC7FD6 /* mainStoryboard2.storyboard */,
+				218B431B1F79493E00DC7FD6 /* Main.storyboard */,
 				21BC9C5D1F6C1BAE0094CC54 /* Assets.xcassets */,
 				21BC9C5F1F6C1BAE0094CC54 /* LaunchScreen.storyboard */,
 				21BC9C621F6C1BAE0094CC54 /* Info.plist */,
@@ -276,11 +304,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				213D35251F7BEF200099D700 /* Fruits.swift in Sources */,
 				21BC9C561F6C1BAE0094CC54 /* ViewController.swift in Sources */,
+				213D35271F7BEF3A0099D700 /* Veggies.swift in Sources */,
 				21CB040B1F7552FC00EC9344 /* Catagories.swift in Sources */,
 				21BC9C541F6C1BAE0094CC54 /* AppDelegate.swift in Sources */,
 				213E41561F700D61006B4358 /* addViewController.swift in Sources */,
+				213D352E1F7BEF860099D700 /* Dairy.swift in Sources */,
+				213D35321F7BEF9B0099D700 /* Drinks.swift in Sources */,
+				213D35301F7BEF930099D700 /* Condiments.swift in Sources */,
+				213D35291F7BEF4C0099D700 /* Other.swift in Sources */,
+				213D352C1F7BEF700099D700 /* Grains.swift in Sources */,
 				21A791201F794BCF007A93E7 /* CatagoryViewController.swift in Sources */,
+				213D35341F7BEFB60099D700 /* Sweets.swift in Sources */,
 				21BC9C5C1F6C1BAE0094CC54 /* groceryList.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

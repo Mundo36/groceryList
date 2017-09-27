@@ -21,7 +21,7 @@ class CatagoryViewController: UIViewController
     {
         super.viewDidLoad()
         
-    var
+    
         
     }
     
