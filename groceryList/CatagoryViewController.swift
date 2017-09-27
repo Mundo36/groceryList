@@ -10,12 +10,17 @@ import UIKit
 
 class CatagoryViewController: UIViewController
 {
+
+    var groceries = [groceryCatagory]()
+    
+
     @IBOutlet weak var listView: UITableView!
+
 
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
+        var appSauce = Fruits(fruits: "Apple Sauce")
     }
     
     

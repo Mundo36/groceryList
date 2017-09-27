@@ -109,8 +109,12 @@
 				21BC9C551F6C1BAE0094CC54 /* ViewController.swift */,
 				213E41551F700D61006B4358 /* addViewController.swift */,
 				21CB040A1F7552FC00EC9344 /* Catagories.swift */,
+<<<<<<< HEAD
+=======
 				218B431B1F79493E00DC7FD6 /* Main.storyboard */,
+>>>>>>> 9353b0059e5495c159127dfe51272f91570f3ee0
 				21A7911F1F794BCF007A93E7 /* CatagoryViewController.swift */,
+				218B431B1F79493E00DC7FD6 /* mainStoryboard2.storyboard */,
 				21BC9C5D1F6C1BAE0094CC54 /* Assets.xcassets */,
 				21BC9C5F1F6C1BAE0094CC54 /* LaunchScreen.storyboard */,
 				21BC9C621F6C1BAE0094CC54 /* Info.plist */,

@@ -8,24 +8,91 @@
 
 import Foundation
 
-class groceryCatagory
+class Fruits
 {
-    var protein = [String]()
-    var fish = [String]()
     var fruit = [String]()
-    var veggies = [String]()
-    var drinks = [String]()
-    var grains = [String]()
-    var dairy = [String]()
+
     
-    init(protein p: Array<Any>, fish f: Array<Any>, fruit r: Array<Any>, veggies v: Array<Any>, drinks d: Array<Any>, grains g: Array<Any>, dairy y: Array<Any>)
+    init(fruit f: Array<Any>)
     {
-        protein = p as! [String]
-        fish = f as! [String]
-        fruit = r as! [String]
-        veggies = v as! [String]
-        drinks = d as! [String]
-        grains = g as! [String]
-        dairy = y as! [String]
+        fruit = f as! [String]
     }
 }
+
+class Veggies
+{
+    var veggies = [String]()
+    
+    
+    init(veggies v: Array<Any>)
+    {
+        veggies = v as! [String]
+    }
+}
+
+class Grains
+{
+    var grains = [String]()
+    
+    
+    init(grains g: Array<Any>)
+    {
+        grains = g as! [String]
+    }
+}
+
+class Dairy
+{
+    var dairy = [String]()
+    
+    
+    init(dairy d: Array<Any>)
+    {
+        dairy = d as! [String]
+    }
+}
+
+class Condiments
+{
+    var condiments = [String]()
+    
+    
+    init(condiments c: Array<Any>)
+    {
+        condiments = c as! [String]
+    }
+}
+
+class Drinks
+{
+    var drinks = [String]()
+    
+    
+    init(drinks d: Array<Any>)
+    {
+        drinks = d as! [String]
+    }
+}
+
+class Sweets
+{
+    var sweets = [String]()
+    
+    
+    init(sweets s: Array<Any>)
+    {
+        sweets = s as! [String]
+    }
+}
+
+class Other
+{
+    var other = [String]()
+    
+    
+    init(other o: Array<Any>)
+    {
+        other = o as! [String]
+    }
+}
+
