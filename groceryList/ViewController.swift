@@ -28,8 +28,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         catch
         {
         }
+        tableList.reloadData()
     }
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool)
+    {
         tableList.reloadData()
     }
     //
@@ -70,7 +72,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 //        if editingStyle == .delete
 //            
 //        {
-//            manageObjectContext.delete(arrayTwo[indexPath.row])
+//            manageObjectContext.delete([indexPath.row])
 //            do {
 //                try manageObjectContext.save()
 //                tableView.reloadData()

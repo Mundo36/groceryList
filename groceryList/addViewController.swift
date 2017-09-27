@@ -21,7 +21,7 @@ class addViewController: UIViewController
 
     }
    
-    func save(text: String, amount: Double, isle: String)
+    func save(text: String, amount: Double, isle: String, quantity: Double)
     {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate
             else
@@ -50,7 +50,9 @@ class addViewController: UIViewController
     }
     @IBAction func addBttn(_ sender: UIButton)
     {
-        save(text: textField.text!, amount: Double(amountTxt.text!)!, isle: isleTxt.text!)
+        save(text: textField.text!, amount: Double(amountTxt.text!)!, isle: isleTxt.text!, quantity: Double(quantityTxt.text!)!)
+        
+        
         
         
         
