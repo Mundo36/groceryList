@@ -11,7 +11,7 @@ import UIKit
 class CatagoryViewController: UIViewController
 {
 
-    var groceries = [groceryCatagory]()
+
     
 
     @IBOutlet weak var listView: UITableView!
@@ -20,7 +20,9 @@ class CatagoryViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        var appSauce = Fruits(fruits: "Apple Sauce")
+        
+    var
+        
     }
     
     

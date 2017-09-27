@@ -8,91 +8,92 @@
 
 import Foundation
 
+
 class Fruits
 {
-    var fruit = [String]()
+    var fruit = ""
 
     
-    init(fruit f: Array<Any>)
+    init(fruit f: String)
     {
-        fruit = f as! [String]
+        fruit = f
     }
 }
 
 class Veggies
 {
-    var veggies = [String]()
+    var veggies = ""
     
     
-    init(veggies v: Array<Any>)
+    init(veggies v: String)
     {
-        veggies = v as! [String]
+        veggies = v
     }
 }
 
 class Grains
 {
-    var grains = [String]()
+    var grains = ""
     
     
-    init(grains g: Array<Any>)
+    init(grains g: String)
     {
-        grains = g as! [String]
+        grains = g
     }
 }
 
 class Dairy
 {
-    var dairy = [String]()
+    var dairy = ""
     
     
-    init(dairy d: Array<Any>)
+    init(dairy d: String)
     {
-        dairy = d as! [String]
+        dairy = d
     }
 }
 
 class Condiments
 {
-    var condiments = [String]()
+    var condiments = ""
     
     
-    init(condiments c: Array<Any>)
+    init(condiments c: String)
     {
-        condiments = c as! [String]
+        condiments = c
     }
 }
 
 class Drinks
 {
-    var drinks = [String]()
+    var drinks = ""
     
     
-    init(drinks d: Array<Any>)
+    init(drinks d: String)
     {
-        drinks = d as! [String]
+        drinks = d
     }
 }
 
 class Sweets
 {
-    var sweets = [String]()
+    var sweets = ""
     
     
-    init(sweets s: Array<Any>)
+    init(sweets s: String)
     {
-        sweets = s as! [String]
+        sweets = s
     }
 }
 
 class Other
 {
-    var other = [String]()
+    var other = ""
     
     
-    init(other o: Array<Any>)
+    init(other o: String)
     {
-        other = o as! [String]
+        other = o
     }
 }
 
